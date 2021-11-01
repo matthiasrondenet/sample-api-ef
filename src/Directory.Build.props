@@ -1,0 +1,50 @@
+<Project>
+  <PropertyGroup>
+   
+    <RootNamespace>$(AssemblyName)</RootNamespace>
+	<AssemblyName>Sample.$(MSBuildProjectName)</AssemblyName>
+
+	<TargetFramework>net6.0</TargetFramework>
+	<LangVersion>latest</LangVersion>
+	<ImplicitUsings>false</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- Allow this when nexus will support snupkg
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    -->
+    <!-- Workaround: Include symbol files (*.pdb) in the built .nupkg -->
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+
+   
+  </PropertyGroup>
+
+      <Choose>
+        <When Condition="$(MSBuildProjectName.EndsWith('Tests'))">
+            <PropertyGroup>
+                <IsPackable>false</IsPackable>
+            </PropertyGroup>
+        </When>
+    </Choose>
+
+    <ItemGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
+        <PackageReference Include="coverlet.msbuild" Version="3.1.0">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+		 <PackageReference Include="coverlet.collector" Version="3.1.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+        <PackageReference Include="FluentAssertions" Version="6.2.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+        <PackageReference Include="xunit" Version="2.4.1" />
+		<PackageReference Include="xunit.extensibility.core" Version="2.4.1" />
+        <PackageReference Include="Xunit.Combinatorial" Version="1.4.1" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+    
+</Project>

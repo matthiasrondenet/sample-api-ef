@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.3.0" />
+    <PackageReference Include="NSubstitute" Version="4.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tools.Infrastructure\Tools.Infrastructure.csproj" />
+    <ProjectReference Include="..\Tools.Ioc\Tools.Ioc.csproj" />
+  </ItemGroup>
+
+</Project>

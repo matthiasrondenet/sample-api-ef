@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Infrastructure.IntegrationTests\Infrastructure.IntegrationTests.csproj" />
+    <ProjectReference Include="..\Model.Testing\Model.Testing.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NSubstitute" Version="4.2.2" />
+    <PackageReference Include="SpecFlow.xUnit" Version="3.9.22" />
+  </ItemGroup>
+
+</Project>

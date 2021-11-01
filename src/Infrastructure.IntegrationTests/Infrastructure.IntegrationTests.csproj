@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure.Change.Generate\Infrastructure.Change.Generate.csproj" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+    <ProjectReference Include="..\Model.Testing\Model.Testing.csproj" />
+    <ProjectReference Include="..\Tools.Testing\Tools.Testing.csproj" />
+  </ItemGroup>
+</Project>
