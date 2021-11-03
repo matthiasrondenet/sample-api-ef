@@ -1,2 +1,5 @@
 # sample-api-ef
-Sample api clean architecture using EF, repository and specification pattern
+Sample api using : 
+- ef core
+- repository
+- (TDOD) specification pattern ?
