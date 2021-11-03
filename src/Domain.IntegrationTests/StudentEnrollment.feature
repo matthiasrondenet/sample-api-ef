@@ -1,6 +1,6 @@
 ﻿Feature: Student Enrollment
 	As a student
-	I must be able to enrol to a new course and be notified
+	I must be able to enroll to a new course and be notified
 
 @enrollment
 Scenario: Student enroll to a new course
@@ -16,7 +16,7 @@ Scenario: Student enroll to a new course
 
 
 @enrollment
-Scenario: Student canno't enroll to an already started course
+Scenario: Student can't enroll to an already started course
 	Given a student
 	  | FirstName | LastName | Email          |
 	  | John      | Doe      | j.doe@univ.com |

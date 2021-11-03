@@ -11,4 +11,10 @@
     <PackageReference Include="SpecFlow.xUnit" Version="3.9.22" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="..\Api\appsettings.Development.json">
+      <Link>appsettings.Development.json</Link>
+    </Content>
+  </ItemGroup>
+
 </Project>

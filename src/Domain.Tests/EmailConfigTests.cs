@@ -1,7 +1,1 @@
-﻿namespace Domain.Tests
-{
-    public class EmailConfigTests
-    {
-        
-    }
-}
+namespace Domain.Tests{public class EmailConfigTests{}}
