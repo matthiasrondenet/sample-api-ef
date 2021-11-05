@@ -1,5 +1,9 @@
 # sample-api-ef
 Sample api using : 
-- ef core
-- repository
-- (TDOD) specification pattern ?
+- .net core api
+- ef core 
+
+Tests :
+- unit tests
+- integration tests with specflow on domain
+- integration test on database
