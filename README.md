@@ -1,4 +1,7 @@
 # sample-api-ef
+
+[![SampleApiCI](https://github.com/matthiasrondenet/sample-api-ef/actions/workflows/dotnetcore.yml/badge.svg)](https://github.com/matthiasrondenet/sample-api-ef/actions/workflows/dotnetcore.yml)
+
 Sample api using : 
 - .net core api
 - ef core 
