@@ -1,1 +1,6 @@
-namespace Tools.Infrastructure{public interface IAggregateRoot{}}
+namespace Tools.Infrastructure
+{
+    public interface IAggregateRoot
+    {
+    }
+}

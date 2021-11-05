@@ -8,14 +8,6 @@
 	<LangVersion>latest</LangVersion>
 	<ImplicitUsings>false</ImplicitUsings>
     <Nullable>enable</Nullable>
-
-    <!-- Allow this when nexus will support snupkg
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    -->
-    <!-- Workaround: Include symbol files (*.pdb) in the built .nupkg -->
-    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-
    
   </PropertyGroup>
 

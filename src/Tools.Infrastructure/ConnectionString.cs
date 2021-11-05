@@ -1,1 +1,7 @@
-namespace Tools.Infrastructure{public interface IConnectionString{string Connection { get; }}}
+namespace Tools.Infrastructure
+{
+    public interface IConnectionString
+    {
+        string Connection { get; }
+    }
+}
