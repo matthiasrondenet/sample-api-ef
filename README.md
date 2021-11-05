@@ -6,4 +6,4 @@ Sample api using :
 Tests :
 - unit tests
 - integration tests with specflow on domain
-- integration test on database
+- integration tests on database
